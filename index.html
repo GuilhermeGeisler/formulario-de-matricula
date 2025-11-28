@@ -2,23 +2,25 @@
 <html lang="pt-BR">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estrelas do Amanhã</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="styles/index.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
   <div id="app">
+
     <main>
       <div class="main-container">
+
         <div class="back">
           <img src="assets/icons/arrow-left-02.svg" alt="Ícone de voltar">
           <span>Voltar</span>
@@ -28,6 +30,7 @@
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
         <form action="" method="post" enctype="multipart/form-data">
+
           <fieldset class="child-info">
             <legend>Informações da criança</legend>
 
@@ -70,7 +73,6 @@
                     stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-
                 <p>
                   Clique aqui para <br>
                   selecionar os arquivos
@@ -80,6 +82,9 @@
 
           </fieldset>
 
+          <!-- =================================== -->
+          <!-- ENDEREÇO -->
+          <!-- =================================== -->
           <fieldset class="address">
             <legend>Endereço Residencial</legend>
 
@@ -108,12 +113,38 @@
 
               <div class="input-wrapper flex-1">
                 <label for="state">Estado</label>
-                <input type="text" id="state" name="state" disabled
-                value="SP">
+                <input type="text" id="state" name="state" value="SP" disabled>
               </div>
             </div>
           </fieldset>
+
+          <fieldset class="guardian">
+            <legend>Informações do responsável</legend>
+
+            <div class="input-wrapper">
+              <label for="guardian">Nome do responsável</label>
+              <input type="text" id="guardian" name="guardian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="text" id="phone" name="phone" placeholder="(10) 9 8765-4321">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mail">E-mail</label>
+              <input type="email" id="mail" name="mail" placeholder="seuemail@gmail.com" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="Ícone de alerta">
+                <span>Insira um e-mail válido.</span>
+              </div>
+            </div>
+
+          </fieldset>
+
         </form>
+
       </div>
     </main>
 
@@ -128,6 +159,7 @@
         <img src="assets/Illustration.svg" alt="Ilustração de crianças estudando.">
       </div>
     </aside>
+
   </div>
 </body>
 
